@@ -1,0 +1,27 @@
+version: "3.1"
+
+rules:
+  - rule: Greet the user
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: Respond to game list request
+    steps:
+      - intent: list_games
+      - action: utter_list_games
+
+  - rule: Respond to game search request
+    steps:
+      - intent: search_game
+      - action: utter_search_game
+
+  - rule: Respond to feedback
+    steps:
+      - intent: feedback
+      - action: utter_feedback
+
+  - rule: Goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye

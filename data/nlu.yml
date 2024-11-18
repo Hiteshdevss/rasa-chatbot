@@ -1,0 +1,43 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hello
+      - hi
+      - hey
+      - hello there
+
+  - intent: goodbye
+    examples: |
+      - bye
+      - goodbye
+      - see you later
+
+  - intent: choose_option
+    examples: |
+      - I want to see the game list
+      - Show me the games
+      - List games
+      - Search for a game
+      - I want to search for a game
+      - Give feedback
+      - I have suggestions
+
+  - intent: list_games
+    examples: |
+      - List the games
+      - Show me all games
+      - What games are available?
+
+  - intent: search_game
+    examples: |
+      - I want to search for a game
+      - Find me a game
+      - Search game
+
+  - intent: feedback
+    examples: |
+      - I have a suggestion
+      - I want to provide feedback
+      - Give feedback

@@ -1,0 +1,33 @@
+version: "3.1"
+
+stories:
+  - story: user chooses list of games
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: list_games
+      - action: utter_list_games
+
+  - story: user chooses search game
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: search_game
+      - action: utter_search_game
+
+  - story: user provides feedback
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: feedback
+      - action: utter_feedback
+
+  - story: user asks for list of games
+    steps:
+      - intent: list_games
+      - action: utter_list_games
+
+  - story: goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye

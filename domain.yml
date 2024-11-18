@@ -1,0 +1,46 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - choose_option
+  - list_games
+  - search_game
+  - feedback
+  - suggestion_feedback
+
+responses:
+  utter_greet:
+    - text: |
+        Welcome to the Game App! Please choose one of the options:
+        1. List of Games
+        2. Game Search
+        3. Suggestions/Feedback
+
+  utter_goodbye:
+    - text: Goodbye! Have a great day!
+
+  utter_list_games:
+    - text: |
+        Here are some of the available games:
+        1. Chess
+        2. Poker
+        3. Sudoku
+        4. Monopoly
+        5. Scrabble
+        6. Checkers
+        7. Blackjack
+        8. Fortnite
+        9. Minecraft
+        10. Candy Crush
+
+  utter_search_game:
+    - text: "Please type the name of the game you want to search for."
+
+  utter_feedback:
+    - text: "Please provide your feedback or suggestions."
+
+actions:
+  - action_list_games
+  - action_search_game
+  - action_feedback
